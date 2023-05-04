@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 
 :root {
   --white: #fff;
@@ -7,8 +8,8 @@
   --light-blue: #005490;
   --color-primary: #9d0191;
   --color-sec: #db6400;
-  --grey: #eee;
-  --dark-grey: #222831;
+  --color-grey: #eee;
+  --color-dark-grey: #222831;
 }
 
 * {
@@ -18,12 +19,15 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 5rem;
 }
+
+
 
 p {
   font-size: 1.6rem;
@@ -35,7 +39,37 @@ img {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
 }
+
+.user {
+  width: 90%;
+  border: 1px solid #eee;
+  padding: 5px;
+}
+
+.user > * {
+  margin: 5px 0;
+}
+button {
+  padding: 1rem;
+}
+
+hr {
+  background-color: #1c2b2d;
+}
+
+ul {
+  list-style: circle;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  font-size: 1.4rem;
+  padding: 5px 0;
+}
+
